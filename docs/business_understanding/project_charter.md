@@ -28,7 +28,7 @@
 ## Metrics
 * Desarrollo de aplicacion para la prediccion del comportamiento de acciones y criptomonedas.
 * Se elige desarrollar el proyecto seguiendo metodologias agiles, SCRUM.
-* Metricas de Sprint, Work Burndown Chart,= 
+* Metricas de Sprint, Work Burndown Chart, Sprint restrospective
 * Retroalimentacion del cliente
 * Criterio de aceptacion del proyecto
 
@@ -47,6 +47,10 @@
   * Sampled data enough for modeling 
 
 * What tools and data storage/analytics resources will be used in the solution e.g.,
+  * Python pandas para exploracion de los datos
+  * Python TensorFlow para modelado y prediccion
+  * Django/Flask para la implementacion del API
+  * Docker	
   * ASA for stream aggregation
   * HDI/Hive/R/Python for feature construction, aggregation and sampling
   * AzureML for modeling and web service operationalization
