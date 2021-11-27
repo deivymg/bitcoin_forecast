@@ -27,17 +27,20 @@
 	
 ## Metrics
 * Desarrollo de aplicacion para la prediccion del comportamiento de acciones y criptomonedas.
-* What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
-* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
-* What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
-* How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
+* Se elige desarrollar el proyecto seguiendo metodologias agiles, SCRUM.
+* Metricas de Sprint, Work Burndown Chart,= 
+* Retroalimentacion del cliente
+* Criterio de aceptacion del proyecto
 
 ## Plan
 * Phases (milestones), timeline, short description of what we'll do in each phase.
 
 ## Architecture
 * Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)
+  * Datos estructurados en CSV
+  * Se cosumen los datos de las APIs de Yahoo Finance y Binance
+  * 	* https://pypi.org/project/yfinance/
+  * 	* https://python-binance.readthedocs.io/en/latest/
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
   * all the data, 
   * after some pre-aggregation on-prem,
