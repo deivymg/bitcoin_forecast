@@ -12,14 +12,18 @@
 
 ## Personnel
 * Who are on this project:
-	* Microsoft:
+	* SuperEquipoDataSolutions:
 		* Project lead
+		* 	* Deivy Martinez
 		* PM
+		* 	* Edwin Perez
 		* Data scientist(s)
+		*	*Christian Otero 	
 		* Account manager
+		* 	* David Reyes
 	* Client:
-		* Data administrator
-		* Business contact
+		* Melissa De La Pava Rodriguez
+		* Business contact: medel@unal.edu.co
 	
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
