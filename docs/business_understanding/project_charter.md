@@ -6,8 +6,8 @@
 * What business problems are we trying to address?
 
 ## Scope
-* What data science solutions are we trying to build?
-* What will we do?
+* Implementar modelo de prediccion de series de tiempo.
+* Aplicacion web para consumir el modelo.
 * How is it going to be consumed by the customer?
 
 ## Personnel
@@ -18,7 +18,7 @@
 		* PM
 		* 	* Edwin Perez
 		* Data scientist(s)
-		*	*Christian Otero 	
+		*	* Christian Otero 	
 		* Account manager
 		* 	* David Reyes
 	* Client:
@@ -26,7 +26,7 @@
 		* Business contact: medel@unal.edu.co
 	
 ## Metrics
-* What are the qualitative objectives? (e.g. reduce user churn)
+* Desarrollo de aplicacion para la prediccion del comportamiento de acciones y criptomonedas.
 * What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
 * Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
