@@ -24,7 +24,7 @@
 		*		contacto: criscotero@gmail.com 	
 		* Account manager
 		* 	* David Reyes
-		* 		contacto: marentesk@gmail.com 
+		* 		contacto: da.reyes19996@gmail.com
 	* Cliente:
 		* Melissa De La Pava Rodriguez, Gerente DelaPava & Co Inc
 		* 		 contacto: medel@unal.edu.co
