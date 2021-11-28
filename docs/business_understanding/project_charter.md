@@ -56,8 +56,8 @@
 * Data
   * Datos estructurados en CSV
   * Se cosumen los datos de las APIs de Yahoo Finance y Binance
-  * 	* https://pypi.org/project/yfinance/
-  * 	* https://python-binance.readthedocs.io/en/latest/
+  * 	 https://pypi.org/project/yfinance/
+  * 	 https://python-binance.readthedocs.io/en/latest/
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
   * all the data, 
   * after some pre-aggregation on-prem,
@@ -82,5 +82,5 @@
 * Mensajeria instantanea Whatsapp
 * Correo electrónico
 * Tablero de tareas en trello
-* 	* https://trello.com/b/L4oX6qe9/proyectodsml6prediccionbolsacripto
+* 	 https://trello.com/b/L4oX6qe9/proyectodsml6prediccionbolsacripto
 
