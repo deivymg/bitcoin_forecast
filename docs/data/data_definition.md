@@ -13,7 +13,7 @@ For each dataset, the links to the sample datasets in the _**Data**_ directory a
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
 | Dataset Crypto Competition | Binance exchange REST API v3 | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [kaggle Report](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/notebook)|
-| Binance API | Binance exchange REST API v3  |  | [API Documentation](https://python-binance.readthedocs.io/en/latest/) | [Data strcuture](https://python-binance.readthedocs.io/en/latest/)|
+| Binance API | Binance exchange REST API v3  |   [API Documentation](https://python-binance.readthedocs.io/en/latest/) | [Data strcuture](https://python-binance.readthedocs.io/en/latest/)|
 
 * Dataset Crypto Competition . Datos de miles de las transacciones hechas por cada minuto en varias criptomonedas incluidas bitcoin.
 * Binance API summary. Datos traídos a través de formato JSON de las transacciones para criptomoneda solicitada.
