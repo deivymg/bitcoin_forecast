@@ -25,8 +25,8 @@
 		* Account manager
 		* 	* David Reyes
 		* 		contacto: marentesk@gmail.com 
-	* Client:
-		* Melissa De La Pava Rodriguez
+	* Cliente:
+		* Melissa De La Pava Rodriguez, Gerente DelaPava & Co Inc
 		* 		 contacto: medel@unal.edu.co
 	
 ## Metrics
