@@ -1,8 +1,8 @@
 # Diccionario de datos
 
-Este conjunto de datos contiene información sobre transacciones históricas para varios criptoactivos, como Bitcoin y Ethereum.
+# Transacciones Históricas
 
-# Database Name 1
+Este conjunto de datos contiene información sobre transacciones históricas para varios criptoactivos, como Bitcoin y Ethereum. Estos datos son extraidos desde kaggle en https://www.kaggle.com/c/g-research-crypto-forecasting/data.
 
 *  *timestamp* - timestamp por cada minuto.
 *   *Count* - número de tranzaciones durante el minuto.
@@ -20,6 +20,16 @@ Este conjunto de datos contiene información sobre transacciones históricas par
 Here you must describe the table
 
 | column | type | description |
+| --- | --- | --- |
+| col1 | INT | Example column |
+| --- | --- | --- |
+| col1 | INT | Example column |
+| --- | --- | --- |
+| col1 | INT | Example column |
+| --- | --- | --- |
+| col1 | INT | Example column |
+| --- | --- | --- |
+| col1 | INT | Example column |
 | --- | --- | --- |
 | col1 | INT | Example column |
 
