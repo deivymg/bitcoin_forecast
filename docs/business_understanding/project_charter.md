@@ -41,7 +41,7 @@
 	<li>Error medio (ME – Mean Error)</li>
 	<li>Error absoluto medio (MAE – Mean Absolute Error )</li>
 	<li>Error cuadrático medio (MSE – Mean Square Error)</li>
-	<li>La raíz del error cuadrático medio (RMSE – Root Mean Square Error)/li>
+	<li>La raíz del error cuadrático medio (RMSE – Root Mean Square Error)/<li>
 	<li>Error porcentual medio (MPE – Mean Percentage Error )</li>
 	<li>Error porcentual absoluto medio (MAPE – Mean Absolute Percentage Error)</li>
 </ol>
