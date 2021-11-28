@@ -1,6 +1,6 @@
-# Data Dictionary
+# Diccionario de datos
 
-In this document you must describe the tables, collections or files that you are using in the project. You can describe each database and provide UML diagrams for a better design description.
+Este conjunto de datos contiene información sobre transacciones históricas para varios criptoactivos, como Bitcoin y Ethereum.
 
 # Database Name 1
 
