@@ -15,15 +15,19 @@
 	* SuperEquipoDataSolutions:
 		* Project lead
 		* 	* Deivy Martinez
+		* 		contact: deivymg@gmail.com
 		* PM
 		* 	* Edwin Perez
+		* 		contacto: edwinaperez32@gmail.com
 		* Data scientist(s)
-		*	* Christian Otero 	
+		*	* Christian Otero
+		*		contacto: criscotero@gmail.com 	
 		* Account manager
 		* 	* David Reyes
+		* 		contacto: marentesk@gmail.com 
 	* Client:
 		* Melissa De La Pava Rodriguez
-		* Business contact: medel@unal.edu.co
+		* 		 contacto: medel@unal.edu.co
 	
 ## Metrics
 * Se elige desarrollar el proyecto seguiendo metodologias agiles, SCRUM.
@@ -74,5 +78,9 @@
     * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
 
 ## Communication
-* How will we keep in touch? Weekly meetings?
-* Who are the contact persons on both sides?
+* La comunicacion entre los stakeholders y los miembros del equipo será por los siguinetes medios:
+* Mensajeria instantanea Whatsapp
+* Correo electrónico
+* Tablero de tareas en trello
+* 	* https://trello.com/b/L4oX6qe9/proyectodsml6prediccionbolsacripto
+
