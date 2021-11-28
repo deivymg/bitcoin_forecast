@@ -1,11 +1,9 @@
-# Team Data Science Project Template
+# Proyecto de Predicción de Bitcoin
 
-This template is an implementation of the Microsoft's Team Data Science Project Template that is currently used at the "Programa de Formación en Machine Learning and Data Science" at Universidad Nacional de Colombia.
+Este Proyecto fue creado en el marco del “Programa de Formación en Machine Learning and Data Science" de la Universidad Nacional de Colombia con el fin de crear un modelo de machine learning el cual realice predicciones de la criptomoneda Bitcoin y presentarlos a través de un dashboard web que permita visualizar los datos de las predicciones en tiempo real.
 
-You'll need tools like `poetry` (default), `venv`, `pyenv` (default), `renv`, `conda`, among others for dependency management and resolution.
 
-This template provides the following folders:
-
-* `packagename`: put the source code (classes and functions) in this folder.
-* `docs`: put the documentation in this folder.
-* `scripts`: this folder must contain the scripts/notebooks that will be executed.
+La estructura de este repositorio esta distribuido de la siguiente manera
+* `packagename:` Código Fuente. bases de datos, preprocesamiento, evaluación y modelo.
+* `docs:` Documentation del Proyecto.
+* `scripts:` scripts/notebooks. 
