@@ -8,10 +8,10 @@
 ## Scope
 * Implementar modelo de prediccion de series de tiempo.
 * Aplicacion web para consumir el modelo.
-* How is it going to be consumed by the customer?
+* Será consumida mediante un formulario en una pagina web donde el usuario final podrá elegir una acción o critomoneda y se otendrá una gráfica con predicciones de series de tiempo
 
 ## Personnel
-* Who are on this project:
+* El equipo de este proyecto son los intergandes del grupo superequipo del curso Ciencia de datos y Machine Learning Avanzado de la Universidad Nacional de Colombia, 2021
 	* SuperEquipoDataSolutions:
 		* Project lead
 		* 	* Deivy Martinez
@@ -26,14 +26,27 @@
 		* Business contact: medel@unal.edu.co
 	
 ## Metrics
-* Desarrollo de aplicacion para la prediccion del comportamiento de acciones y criptomonedas.
 * Se elige desarrollar el proyecto seguiendo metodologias agiles, SCRUM.
 * Metricas de Sprint, Work Burndown Chart, Sprint restrospective
+* Desarrollo de aplicacion para la prediccion del comportamiento de acciones y criptomonedas.
 * Retroalimentacion del cliente
 * Criterio de aceptacion del proyecto
 
 ## Plan
-* Phases (milestones), timeline, short description of what we'll do in each phase.
+* Milestones
+* 	Crear libreria para consumo de API de YahooFinance
+* 	Crear libreria para consumo de API de criptomonedas
+* 	Exploracion de datos de las APIs
+* 	Diseñar un DataStream 
+* 	Diseñar arquitectura para alamaacenar los datos obtenidos
+* 	Definir flujo de tareas y frecuencia con la que se van a consumir los datos de las APIs
+* 	
+* 	Modelado de series de tiempo
+* 	Elegir un modelo
+* 	Crear API de microservicio para consumir el modelo elegido
+* 	Diseño de interfaz de usurio
+* 	Entregar el proyecto
+* 	
 
 ## Architecture
 * Data
