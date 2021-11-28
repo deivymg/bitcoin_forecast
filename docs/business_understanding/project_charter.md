@@ -74,14 +74,14 @@
   
   * Se trabajará con la siguiente informacion respecto a una accioón o criptomoneda
 
-		<ol>
-			<li>Previous Close</li>
-			<li>Open</li>
-			<li>High</li>
-			<li>Low</li>
-			<li>Volume</li>
-			<li>Avg. Volume</li>
-		</ol>
+<ol>
+<li>Previous Close</li>
+<li>Open</li>
+<li>High</li>
+<li>Low</li>
+<li>Volume</li>
+<li>Avg. Volume</li>
+</ol>
 
 
 
