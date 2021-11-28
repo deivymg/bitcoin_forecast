@@ -12,7 +12,7 @@ For each dataset, the links to the sample datasets in the _**Data**_ directory a
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Dataset Crypto Competition | Binance exchange REST API v3 | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [kaggle Report](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/notebook)|
+| Dataset Crypto Competition | Dataset CSV | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [kaggle Report](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/notebook)|
 | Binance API | Binance exchange REST API v3  |   [API Documentation](https://python-binance.readthedocs.io/en/latest/) | [Data strcuture](https://python-binance.readthedocs.io/en/latest/)|
 
 * Dataset Crypto Competition . Datos de miles de las transacciones hechas por cada minuto en varias criptomonedas incluidas bitcoin.
@@ -21,10 +21,10 @@ For each dataset, the links to the sample datasets in the _**Data**_ directory a
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Processed Dataset 1 | [Dataset1](link/to/dataset1/report), [Dataset2](link/to/dataset2/report) | [Python_Script1.py](link/to/python/script/file/in/Code) | [Processed Dataset 1 Report](link/to/report1)|
-| Processed Dataset 2 | [Dataset2](link/to/dataset2/report) |[script2.R](link/to/R/script/file/in/Code) | [Processed Dataset 2 Report](link/to/report2)|
-* Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
-* Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
+| Processed Crypto Competition  | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [Python_limpiezadatoscsv.py](link/to/python/script/file/in/Code) | [Processed Crypto Competition Report](link/to/report1)|
+| Processed Binance API | [JSON](link/to/dataset2/report) |[jsonprocessscript.py](link/to/R/script/file/in/Code) | [Processed Binance API Report](link/to/report2)|
+* Processed Crypto Competition summary. se crea un scrip de limpieza de datos faltantes y aplicar una normalización de los datos
+* Processed Binance API summary. Se crea un script para evaluar los datos y recibidos por el api y determinar si estan correctamente y aplicar normalización.
 
 ## Feature Sets
 
