@@ -49,9 +49,6 @@
 
 
 
-
-
-
 ## Plan
 * Milestones
 * 	Crear libreria para consumo de API de YahooFinance
@@ -74,6 +71,20 @@
   * Se cosumen los datos de las APIs de Yahoo Finance y Binance
   * 	 https://pypi.org/project/yfinance/
   * 	 https://python-binance.readthedocs.io/en/latest/
+  
+  * Se trabajará con la siguiente informacion respecto a una accioón o criptomoneda
+
+		<ol>
+			<li>Previous Close</li>
+			<li>Open</li>
+			<li>High</li>
+			<li>Low</li>
+			<li>Volume</li>
+			<li>Avg. Volume</li>
+		</ol>
+
+
+
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
   * all the data, 
   * after some pre-aggregation on-prem,
