@@ -6,17 +6,17 @@ For each data, an individual report describing the data schema, the meaning of e
 
 For each dataset, the links to the sample datasets in the _**Data**_ directory are also provided. 
 
-_**For ease of modifying this report, placeholder links are included in this page, for example a link to dataset 1, but they are just placeholders pointing to a non-existent page. These should be modified to point to the actual location.**_
+
 
 ## Raw Data Sources
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Dataset 1 | Brief description of its orignal location | Brief description of its destination location | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](link/to/report1)|
-| Dataset 2 | Brief description of its orignal location | Brief description of its destination location | [script2.R](link/to/R/script/file/in/Code) | [Dataset 2 Report](link/to/report2)|
+| Dataset Crypto Competition | Binance exchange REST API v3 | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [kaggle Report](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/notebook)|
+| Binance API | Binance exchange REST API v3  |  | [API Documentation](https://python-binance.readthedocs.io/en/latest/) | [Data strcuture](https://python-binance.readthedocs.io/en/latest/)|
 
-* Dataset1 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset1 Report.>
-* Dataset2 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset2 Report.> 
+* Dataset Crypto Competition . Datos de miles de las transacciones hechas por cada minuto en varias criptomonedas incluidas bitcoin.
+* Binance API summary. Datos traídos a través de formato JSON de las transacciones para criptomoneda solicitada.
 
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
