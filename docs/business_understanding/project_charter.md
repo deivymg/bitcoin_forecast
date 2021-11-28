@@ -36,6 +36,9 @@
 * Retroalimentacion del cliente
 * Criterio de aceptacion del proyecto
 
+* Mejorar la rentabilidad promedio al momento de realizar una transacción.
+* proporcionar información acerca del pronostico de la criptodivisa.
+
 * Para la medición del rendimiento de los modelos propuestos se utilizara:
 <ol>
 	<li>Error medio (ME – Mean Error)</li>
@@ -55,13 +58,13 @@
 * 	Crear libreria para consumo de API de criptomonedas
 * 	Exploracion de datos de las APIs
 * 	Diseñar un DataStream 
-* 	Diseñar arquitectura para alamaacenar los datos obtenidos
+* 	Diseñar arquitectura para almacenar los datos obtenidos
 * 	Definir flujo de tareas y frecuencia con la que se van a consumir los datos de las APIs
 * 	
 * 	Modelado de series de tiempo
 * 	Elegir un modelo de prediciones de series de tiempo
-* 	Crear API de microservicio para consumir el modelo elegido
-* 	Diseño de interfaz de usurio
+* 	Consumir un microservicio API para implementacion del modelo elegido
+* 	Diseño de interfaz de usuario
 * 	Entregar el proyecto
 * 	
 
@@ -84,25 +87,21 @@
 </ol>
 
 
+* Movimiento de datos a traves de un Crom de Linux para la ejecucuión de un programa de python para pre-procesamiento de datos.
 
-* Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
-  * all the data, 
-  * after some pre-aggregation on-prem,
-  * Sampled data enough for modeling 
+
 
 * What tools and data storage/analytics resources will be used in the solution e.g.,
   * Python pandas para exploracion de los datos
   * Python TensorFlow para modelado y prediccion
   * Django/Flask para la implementacion del API
+  * dash plotly/python para generacion de dashboard 
   * Docker	
   * ASA for stream aggregation
-  * HDI/Hive/R/Python for feature construction, aggregation and sampling
-  * AzureML for modeling and web service operationalization
-* How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
-  * How will the customer use the model results to make decisions
-  * Data movement pipeline in production
-  * Make a 1 slide diagram showing the end to end data flow and decision architecture
-    * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
+  * Python for feature construction, aggregation and sampling
+ 
+ 
+
 
 ## Communication
 * La comunicacion entre los stakeholders y los miembros del equipo será por los siguinetes medios:
