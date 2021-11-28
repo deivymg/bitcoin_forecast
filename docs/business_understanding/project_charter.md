@@ -2,7 +2,7 @@
 
 ## Business background
 
-* El cliente de este proeyecto es la firma de inversiones DelaPava & Co Inc. con sede en la ciudad de bogotá.
+* El cliente de este proyecto es la firma de inversiones DelaPava & Co Inc. con sede en la ciudad de bogotá.
 *  DelaPava & Co esta buscando en invertir en herramientas de analítica que le ayude a su equipo de inversiones a hacer predicciones en el mercado de la criptomonedas y del precio de acciones de empresas en la bolsa de Nueva York.
 
 ## Scope
