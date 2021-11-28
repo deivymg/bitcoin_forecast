@@ -53,18 +53,45 @@
 
 
 ## Plan
-* Milestones
-* 	Crear libreria para consumo de API de YahooFinance
-* 	Crear libreria para consumo de API de criptomonedas
-* 	Exploracion de datos de las APIs
-* 	Diseñar un DataStream 
-* 	Diseñar arquitectura para almacenar los datos obtenidos
-* 	Definir flujo de tareas y frecuencia con la que se van a consumir los datos de las APIs
+
+* Business Understanding
+* 	Reconocimiento del modelo de negocio
+* 	Definicion del As-Is
+* 	Definicion del To-Be
 * 	
-* 	Modelado de series de tiempo
-* 	Elegir un modelo de prediciones de series de tiempo
-* 	Consumir un microservicio API para implementacion del modelo elegido
-* 	Diseño de interfaz de usuario
+* Data Undestanding
+* 	Reconocimiento de los datos
+* 	Recuperación de datos
+* 		Crear libreria para consumo de API de YahooFinance
+* 		Crear libreria para consumo de API de criptomonedas
+* 	 	Exploracion de datos de las APIs
+* 		Diseñar un DataStream 
+* 		Diseñar arquitectura para almacenar los datos obtenidos
+* 		Definir flujo de tareas y frecuencia con la que se van a consumir los datos de las APIs
+* 	Exploración de los datos
+* 	Limpieza de datos
+
+* Modeling
+* 	Investigación de modelos existentes
+* 	Creación del modelo
+* 		Modelado de series de tiempo
+* 		Elegir un modelo de prediciones de series de tiempo
+* 		Consumir un microservicio API para implementacion del modelo elegido
+* 	Evaluacion del modelo
+* 	Creacion de Dashboard
+* 		Diseño de interfaz de usuario
+* Deployment
+* 	Importe del proyecto
+* 	Prueba de Concepto del proyecto
+* 	Evaluacion del PM
+* 	Entrega Final a Pettite Comitté
+* 	Puesta en ambiente de Certificación
+* 	Prueba de Usuario Final
+
+* 
+* Acceptance
+* 	Puesta en Producción
+* 	Evaluacion del Usuario Final
 * 	Entregar el proyecto
 * 	
 
@@ -105,8 +132,9 @@
 
 ## Communication
 * La comunicacion entre los stakeholders y los miembros del equipo será por los siguinetes medios:
-* Mensajeria instantanea Whatsapp
+* Mensajeria instantanea Whatsapp 
 * Correo electrónico
 * Tablero de tareas en trello
 * 	 https://trello.com/b/L4oX6qe9/proyectodsml6prediccionbolsacripto
+* Se realizarán reuniones cada dos (2) días definidos por el sprint
 
