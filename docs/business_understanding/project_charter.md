@@ -2,8 +2,8 @@
 
 ## Business background
 
-* Who is the client, what business domain the client is in.
-* What business problems are we trying to address?
+* El cliente de este proeyecto es la firma de inversiones DelaPava & Co Inc. con sede en la ciudad de bogotá.
+*  DelaPava & Co esta buscando en invertir en herramientas de analítica que le ayude a su equipo de inversiones a hacer predicciones en el mercado de la criptomonedas y del precio de acciones de empresas en la bolsa de Nueva York.
 
 ## Scope
 * Implementar modelo de prediccion de series de tiempo.
@@ -36,6 +36,22 @@
 * Retroalimentacion del cliente
 * Criterio de aceptacion del proyecto
 
+* Para la medición del rendimiento de los modelos propuestos se utilizara:
+<ol>
+	<li>Error medio (ME – Mean Error)</li>
+	<li>Error absoluto medio (MAE – Mean Absolute Error )</li>
+	<li>Error cuadrático medio (MSE – Mean Square Error)</li>
+	<li>La raíz del error cuadrático medio (RMSE – Root Mean Square Error)/li>
+	<li>Error porcentual medio (MPE – Mean Percentage Error )</li>
+	<li>Error porcentual absoluto medio (MAPE – Mean Absolute Percentage Error)</li>
+</ol>
+
+
+
+
+
+
+
 ## Plan
 * Milestones
 * 	Crear libreria para consumo de API de YahooFinance
@@ -46,7 +62,7 @@
 * 	Definir flujo de tareas y frecuencia con la que se van a consumir los datos de las APIs
 * 	
 * 	Modelado de series de tiempo
-* 	Elegir un modelo
+* 	Elegir un modelo de prediciones de series de tiempo
 * 	Crear API de microservicio para consumir el modelo elegido
 * 	Diseño de interfaz de usurio
 * 	Entregar el proyecto
