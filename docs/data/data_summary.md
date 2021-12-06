@@ -14,10 +14,15 @@ los datos obtenidos por la API estan completos, sin valores nulos ni vacios.
 
 ## Target variable
 
+Las variables objetivo que tienen un mayor peso en el modelo son:
+
 1. Open
 2. Close
 
 ## Individual variables
+
+Las variables entregadas por la API son:
+
 1. Open
 2. High
 3. Low
@@ -25,6 +30,8 @@ los datos obtenidos por la API estan completos, sin valores nulos ni vacios.
 5. Date
 
 ## Variable ranking
+
+la mejor clasificación que le podemos dar a las variablems de foma Ordinal es la siguiente:
 
 1.Close
 2.Open
@@ -36,3 +43,4 @@ los datos obtenidos por la API estan completos, sin valores nulos ni vacios.
 
 la relación que existe entre las variables es bastante alta ya que determinan el comportamiento de la criptodivisa.
 
+para mayor información dirijase a la carpeta ../scripts/eda/eda.py
