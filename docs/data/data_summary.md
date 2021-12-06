@@ -33,11 +33,11 @@ Las variables entregadas por la API son:
 
 la mejor clasificación que le podemos dar a las variablems de foma Ordinal es la siguiente:
 
-1.Close
-2.Open
-3.Date
-4.High
-5.Low
+1. Close
+2. Open
+3. Date
+4. High
+5. Low
 
 ## Relationship between explanatory variables and target variable
 
