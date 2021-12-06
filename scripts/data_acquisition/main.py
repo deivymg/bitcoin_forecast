@@ -1,12 +1,14 @@
 import os
 import pandas as pd
 from binance.client import Client
-client = Client(binance_api, binance_secret)
 
 
 #inicializamos las claves
 binance_api='xxxxxxxxxxxxxxxxxxxxxxxxxxx'
 binance_secret='xxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+
+client = Client(binance_api, binance_secret)
 
 #solicitamos los datos por minuto iniciando desde los ultimos 15 minutos
 
