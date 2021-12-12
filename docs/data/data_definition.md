@@ -21,8 +21,8 @@ For each dataset, the links to the sample datasets in the _**Data**_ directory a
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Processed Crypto Competition  | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [Python_limpiezadatoscsv.py](link/to/python/script/file/in/Code) | [Processed Crypto Competition Report](link/to/report1)|
-| Processed Binance API | [JSON](link/to/dataset2/report) |[jsonprocessscript.py](link/to/R/script/file/in/Code) | [Processed Binance API Report](link/to/report2)|
+| Processed Crypto Competition  | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [Limpieza de datos](link/to/python/script/file/in/Code) | [Processed Crypto Competition Report](link/to/report1)|
+| Processed Binance API | [API data acquisition and proccessing](link/scripts/data_acquisition/main.py) |[data a](link/scripts/data_acquisition/ultimos_15_minutos.csv) | [Processed Binance API Report](link/to/report2)|
 * Processed Crypto Competition summary. se crea un scrip de limpieza de datos faltantes y aplicar una normalización de los datos
 * Processed Binance API summary. Se crea un script para evaluar los datos y recibidos por el api y determinar si estan correctamente y aplicar normalización.
 
