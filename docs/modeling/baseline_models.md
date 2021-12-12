@@ -1,35 +1,52 @@
 # Baseline Model Report
 
-_Baseline model is the the model a data scientist would train and evaluate quickly after he/she has the first (preliminary) feature set ready for the machine learning modeling. Through building the baseline model, the data scientist can have a quick assessment of the feasibility of the machine learning task._
+MODELO LSTM Long Short Term Memory Multivariable
 
-> If using the Automated Modeling and Reporting tool, most of the sections below will be generated automatically from this tool. 
+Se va a utilizar un modelo de LSTM con 50 neuronas intermedias como modelo inicial, a partir de este modelo se van a realizar cambios para ajustarlo a la necesidad del proyecto.
+
 
 ## Analytic Approach
-* What is target definition
-* What are inputs (description)
-* What kind of model was built?
+* El target del proyecto es dar una predicción del precio futuro de la criptodivisa 
+* Las entradas para el modelo son las proporcionadas por la API de Binance:
+    * Open: precio de apertura de la criptodivisa en el periodo de  un minuto. 
+    * High: Precio más alto de la criptodivisa en el periodo de  un minuto. 
+    * Low: Precio más bajo de la criptodivisa en el periodo de  un minuto. 
+    * Close: precio de cierre de la criptodivisa en el periodo de  un minuto. 
+    
+* Se utilizó un modelo de LSTM, debido a que este problema es un problema de series de tiempo que necesitan tener en cuenta el valor de la divisa en instantes de tiempo anteriores para predecir el valor en el futuro proximo - inmediato.
 
 ## Model Description
 
-* Models and Parameters
+* Modelo LSTM de 50 capas intermedias, Una capa densa y un Optimizador Adam
 
 	* Description or images of data flow graph
-  		* if AzureML, link to:
+  		* if AzureML, link to: (Imagen del modelo)
     		* Training experiment
     		* Scoring workflow
-	* What learner(s) were used?
+	* learning rate: 1x10^-3
 	* Learner hyper-parameters
 
 
 ## Results (Model Performance)
-* ROC/Lift charts, AUC, R^2, MAPE as appropriate
+* Evaluation metric results:-
+MSE is : 0.00010182643872599576
+MAE is : 0.006106787879975921
+RMSE is : 0.010090908716562437
+R2 is : -31.77230170293499
+
 * Performance graphs for parameters sweeps if applicable
 
 ## Model Understanding
 
-* Variable Importance (significance)
+* la mejor clasificación que le podemos dar a las variablems de foma Ordinal es la siguiente:
 
-* Insight Derived from the Model
+    Close
+    Open
+    Date
+    High
+    Low
+
+
 
 ## Conclusion and Discussions for Next Steps
 
