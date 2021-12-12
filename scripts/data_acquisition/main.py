@@ -22,4 +22,4 @@ for line in bars:
 #convertimos los datos a un dataframe
 btc_df = pd.DataFrame(bars, columns=['date', 'open', 'high', 'low', 'close'])
 btc_df.set_index('date', inplace=True)
-btc_df.to_csv('ultimos 15 minuts.csv')
+btc_df.to_csv('ultimos_15_minutos.csv')
