@@ -10,7 +10,7 @@ def limpieza(df:DataFrame ) -> DataFrame:
   series_bitcoin = series_bitcoin.reindex(range(series_bitcoin.index[0],series_bitcoin.index[-1]+60,60),method='pad')
   return series_bitcoin
 
-def preprosesing():
+def preprosesing(series_bitcoin: DataFrame):
 
     # armamos el data set de entrada y el vector de salida y 
 
