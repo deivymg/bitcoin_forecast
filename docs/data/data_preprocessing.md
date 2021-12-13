@@ -1,47 +1,24 @@
 
-# Data Report
+# Liempieza y preprocesamiento
 
-los datos son extraidos a traves de la web API de Binance, esta nos ofrece los datos de la criptomoneda en cuestion (BITCOIN).
-primero se genera un request a la API para que nos enterge la informacion del historico de BITCOIN en un periodo de 15min.
-la respuesta de la API nos entrega una lista con los valores de fecha (data_stamp), apertura(Open), Alto(High), bajo(Low) y cierre(Close)
+Luego de extraer los datos crudos del web API de Binance, estos se limpian y se les realiza un preprocesamiento.
 
-## General summary of the data
+## Limpieza
 
-los datos al ser de valores de la criptomoneda, son de caracter numerico indicando el precio de la criptodivisa en el momento de su transaccion
+- Se eliminan filas en las que cualquier columna tenga NA.
+- Se rellenan los datos para los minutos faltantes con el ultimo valor. 
 
-## Data quality summary
+## Preprocesamiento
 
-los datos obtenidos por la API estan completos, sin valores nulos ni vacios.
+Hacemos un preprocesamiento de los datos con la idea de implementar un modelo LSTM para regresion multivariable con una única salida. La cual será  nuestro target para los proximos 15 mins.
 
-## Target variable
+*   *Target* - Residual log-returns para la cripto moneda durante los próximos 15 mins.
 
-Las variables objetivo que tienen un mayor peso en el modelo son:
+- Se arma el data-set de entrada X el vector de salida Y
+- Escojemos nuestro dataset datos del 2021 desde 2021-06-13T00:00:00 a 2021-09-20T23:44:00.
+- Se estandarizan los datos. 
+- Se prepara el dataset en el formato de entrada del módelo LSTM
+- Se dividen los datos de la serie de tiempo en muestras consecutivas de n_steps unidades de tiempo
 
-1. Open
-2. Close
 
-## Individual variables
-
-Las variables entregadas por la API son:
-
-1. Open
-2. High
-3. Low
-4. Close
-5. Date
-
-## Variable ranking
-
-la mejor clasificación que le podemos dar a las variablems de foma Ordinal es la siguiente:
-
-1. Close
-2. Open
-3. Date
-4. High
-5. Low
-
-## Relationship between explanatory variables and target variable
-
-la relación que existe entre las variables es bastante alta ya que determinan el comportamiento de la criptodivisa.
-
-para mayor información dirijase a la carpeta ../scripts/eda/eda.py
+para mayor información dirijase a la carpeta ../scripts/preprocessing/preprocessing.py
