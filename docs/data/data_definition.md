@@ -21,17 +21,8 @@ For each dataset, the links to the sample datasets in the _**Data**_ directory a
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Processed Crypto Competition  | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [Python_limpiezadatoscsv.py](link/to/python/script/file/in/Code) | [Processed Crypto Competition Report](link/to/report1)|
-| Processed Binance API | [JSON](link/to/dataset2/report) |[jsonprocessscript.py](link/to/R/script/file/in/Code) | [Processed Binance API Report](link/to/report2)|
+| Processed Crypto Competition  | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [Limpieza de datos](/scripts/preprocessing/main.py) | [Processed Crypto Report](/docs/data/data_preprocessing.md)|
+| Processed Binance API | [API data acquisition and processing](/scripts/data_acquisition/main.py) |[Limpieza de datos](/scripts/preprocessing/main.py )| [Processed Crypto Report](/docs/data/data_preprocessing.md)|
 * Processed Crypto Competition summary. se crea un scrip de limpieza de datos faltantes y aplicar una normalización de los datos
 * Processed Binance API summary. Se crea un script para evaluar los datos y recibidos por el api y determinar si estan correctamente y aplicar normalización.
 
-## Feature Sets
-
-| Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
-| ---:| ---: | ---: | ---: | 
-| Feature Set 1 | [Dataset1](link/to/dataset1/report), [Processed Dataset2](link/to/dataset2/report) | [R_Script2.R](link/to/R/script/file/in/Code) | [Feature Set1 Report](link/to/report1)|
-| Feature Set 2 | [Processed Dataset2](link/to/dataset2/report) |[SQL_Script2.sql](link/to/sql/script/file/in/Code) | [Feature Set2 Report](link/to/report2)|
-
-* Feature Set1 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set1 Report.>
-* Feature Set2 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set2 Report.> 
