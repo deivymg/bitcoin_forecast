@@ -1,12 +1,13 @@
 
 import os
 import pandas as pd
+import binance
 from binance.client import Client
 
 
 #inicializamos las claves
-binance_api=os.environ.get('binance_api')
-binance_secret=os.environ.get('binance_secret')
+binance_api="${BINANCE_API}"
+binance_secret="${BINANCE_SECRET}"
 
 
 client = Client(binance_api, binance_secret)
