@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class DataBasePaths(BaseModel):
+class DataLakePaths(BaseModel):
 	"""
 
 	Class for database data
@@ -8,9 +8,14 @@ class DataBasePaths(BaseModel):
 	Attributes
 	..........
 	
-	BTC_df : str
-		path to BTC database
+	BTC_raw_df : str
+		path to BTC database	
+	preprocessed_data : str
+		path to preprocessed data
+	models : str	
+		path to models
 	"""
-	BTC_df : sxtr
-
+	BTC_raw_df : str
+	preprocessed_data : str
+	models : str
 

@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 import binance
+#from packagename.environment.base import BinanceCredential
 from binance.client import Client
 
 
@@ -40,4 +41,8 @@ btc_df ['timestamp'] = btc_df['timestamp'].astype(str)
 btc_df ['timestamp'] = btc_df['timestamp'].str[:11]
 btc_df.set_index('timestamp', inplace=True)
 
-btc_df.to_csv('ultimos_15_minutos.csv')
+#btc_df.to_csv('ultimos_15_minutos.csv')
+
+data_path = os.environ['PREPROCESS_DATA_PATH']
+
+btc_df.to_csv(os.path.join(data_path,'ultimos_15_minutos.csv'))
