@@ -1,6 +1,18 @@
+import numpy as np
+import pandas as pd
+from pandas import DataFrame
+from datetime import datetime
+import time
+import sklearn
+from sklearn.preprocessing import StandardScaler
+
+
+
 '''
 LIMPIEZA DE LOS DATOS OBTENIDOS DEL DATASET EN CSV
 '''
+
+
 
 def limpieza(df:DataFrame ) -> DataFrame:
   series_bitcoin = df[df['Asset_ID']==1]
@@ -10,9 +22,9 @@ def limpieza(df:DataFrame ) -> DataFrame:
   series_bitcoin = series_bitcoin.reindex(range(series_bitcoin.index[0],series_bitcoin.index[-1]+60,60),method='pad')
   return series_bitcoin
 
-def preprosesing(series_bitcoin: DataFrame):
+def preprocessing(series_bitcoin: DataFrame) :
 
-  # armamos el data set de entrada y el vector de salida y 
+    # armamos el data set de entrada y el vector de salida y 
 
   Y = series_bitcoin['Target']
   X = series_bitcoin.drop('Target', axis=1)
@@ -33,8 +45,7 @@ def preprosesing(series_bitcoin: DataFrame):
   y_btc_test = Y.loc[test_window[0]:test_window[1]]
 
 
-  from sklearn.preprocessing import StandardScaler
-  # Estandarizamos los datos
+    # Estandarizamos los datos
   scaler = StandardScaler()
 
   X_btc_train_scaled = scaler.fit_transform(X_btc_train)
@@ -47,13 +58,14 @@ def preprosesing(series_bitcoin: DataFrame):
   dataset_test = prepararDataset(X_btc_test_scaled,y_btc_test)
   x_test, y_test = split_sequences(dataset_test, n_steps)
 
-  return x_train, y_train,x_test, y_test
+  #datasource = append()
+  return (x_train, y_train, x_test, y_test)
 
 def prepararDataset(x,y):
 
   # convertimos a un arreglo
-  x =  array(x)
-  y = array(y)
+  x = np.array(x)
+  y = np.array(y)
 
   x0 = x[:,0].reshape(x.shape[0], 1)  # corresponde a Count
   x1 = x[:,1].reshape(x.shape[0], 1)  # corresponde a Open 
@@ -65,7 +77,7 @@ def prepararDataset(x,y):
 
   y = y.reshape(x.shape[0], 1)
 
-  dataset = hstack((x0,x1,x2,x3,x4,x5,x6,y))
+  dataset = np.hstack((x0,x1,x2,x3,x4,x5,x6,y))
 
   return dataset
 
@@ -83,4 +95,4 @@ def split_sequences(sequences, n_steps):
     seq_y = sequences[end_ix-1, -1]
     X.append(seq_x)
     y.append(seq_y)
-  return array(X), array(y)
+  return np.array(X), np.array(y)
