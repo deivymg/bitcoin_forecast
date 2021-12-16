@@ -123,9 +123,7 @@
   * Python TensorFlow para modelado y prediccion
   * Django/Flask para la implementacion del API
   * dash plotly/python para generacion de dashboard 
-  * Docker	
-  * ASA for stream aggregation
-  * Python for feature construction, aggregation and sampling
+  
  
  
 
