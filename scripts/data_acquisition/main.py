@@ -6,7 +6,7 @@ import time
 from datetime import datetime, timedelta
 
 
-df main():
+def main():
     #inicializamos las claves
     binance_api=os.environ.get('binance_api')
     binance_secret=os.environ.get('binance_secret')
