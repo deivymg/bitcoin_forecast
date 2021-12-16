@@ -6,8 +6,8 @@ from binance.client import Client
 
 
 #inicializamos las claves
-binance_api=os.environ.get('BINANCE_API')
-binance_secret=os.environ.get('BINANCE_SECRET')
+binance_api=os.environ['BINANCE_API']
+binance_secret=os.environ['BINANCE_SECRET']
 
 client = Client(binance_api, binance_secret)
 
