@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import os
 import pandas as pd
 from binance.client import Client
@@ -92,6 +93,8 @@ def main():
 if __name__=="__main__":
     main()
 =======
+=======
+>>>>>>> eb53bb0c3dcfd835da28f1abaa433ba34598ea08
 import os
 import pandas as pd
 from binance.client import Client
@@ -182,4 +185,7 @@ def main():
 if __name__=="__main__":
     main()
 
+<<<<<<< HEAD
+>>>>>>> eb53bb0c3dcfd835da28f1abaa433ba34598ea08
+=======
 >>>>>>> eb53bb0c3dcfd835da28f1abaa433ba34598ea08
