@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import os 
 import pandas as pd
 import numpy as np
@@ -20,6 +21,8 @@ def main():
 		
   	
 =======
+=======
+>>>>>>> eb53bb0c3dcfd835da28f1abaa433ba34598ea08
 from bitcoin_forecast.scripts.preprocessing.preprocessing import prepararDataset,split_sequences,limpieza,preprosesing
 
 df main():
@@ -31,6 +34,9 @@ df main():
   x_test.tofile('x_test')
   y_test.tofile('y_test')
   
+<<<<<<< HEAD
+>>>>>>> eb53bb0c3dcfd835da28f1abaa433ba34598ea08
+=======
 >>>>>>> eb53bb0c3dcfd835da28f1abaa433ba34598ea08
 if __name__=="__main__":
   main()
