@@ -1,6 +1,6 @@
 
 *.env
-scripts/data_acquisition/data/*
+/scripts/data_acquisition/data/*
 
 [[package]]
 name = "absl-py"
