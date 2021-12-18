@@ -1,4 +1,4 @@
-data/*
+
 *.env
 scripts/data_acquisition/data/*
 
