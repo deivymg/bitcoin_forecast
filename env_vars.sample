@@ -1,3 +1,13 @@
-export  BINANCE_API = ""
-export  BINANCE_SECRET = ""
-export  DATAFILE_SOURCE = "data/"
+
+# Binance Credentials
+
+export BINANCE_API=
+export BINANCE_SECRET=
+
+#Data paths
+
+export BTC_DATAFRAME_PATH="${HOME}/bitcoin_forecast/scripts/data_acquisition/data/raw/"
+export BINANCE_RAW_PATH="${HOME}/bitcoin_forecast/scripts/data_acquisition/data/raw/"
+export PREPROCESS_DATA_PATH="${HOME}/bitcoin_forecast/scripts/data_acquisition/data/preprocess/"
+export MODEL_PATH="${HOME}/bitcoin_forecast/scripts/data_acquisition/data/models/"
+export PROJECT_PATH="${HOME}/bitcoin_forecast/"
