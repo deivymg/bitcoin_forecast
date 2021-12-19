@@ -1,4 +1,5 @@
 
+
 import os
 import pandas as pd
 from binance.client import Client
@@ -36,22 +37,7 @@ def main():
                                     'Ignore'])
     #función para convertir fechas en string a timestamp para poder filtrar los datos
     totimestamp = lambda s: np.int32(time.mktime(datetime.strptime(s, "%Y-%m-%d").timetuple()))
-
-    #convertimos los datos a un dataframe
-    bars = client.get_historical_klines('BTCUSDT', Client.KLINE_INTERVAL_1MINUTE, "15 minutes ago UTC")
-
-    btc_df = pd.DataFrame(bars, columns=['timestamp',
-                                        'Open',
-                                        'High',
-                                        'Low',
-                                        'Close',
-                                        'Volume',
-                                        'Close time',
-                                        'Close time',
-                                        'Count',
-                                        'Taker buy base asset volume',
-                                        'Taker buy quote asset volume',
-                                        'Ignore'])
+                                  
     #eliminamos columnas que no sirven y reordenamos los datos
     btc_df = btc_df[['timestamp','Count', 'Open', 'High', 'Low', 'Close', 'Volume' ]]
     btc_df ['timestamp'] = btc_df['timestamp'].astype(str)
