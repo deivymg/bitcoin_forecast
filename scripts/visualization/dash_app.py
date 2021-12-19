@@ -5,6 +5,7 @@ import plotly.express as px
 import os
 import pandas as pd
 
+
 """
 def actualizar_df():
 	make data_acquisition
@@ -17,7 +18,7 @@ def get_df():
 
 
 
-#external_stylesheets =['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
 
 app = dash.Dash(__name__) #, external_stylesheets)
 
