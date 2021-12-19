@@ -88,13 +88,13 @@ Los proximos pasos para nuestro proyecto es adicoinar mas activos para que nuest
 	
 ## Appendix
 
-	###Funcionamiento del dashboard
+	#Funcionamiento del dashboard
 	
-	![image](https://user-images.githubusercontent.com/21108295/146695026-b47d05fa-dbbe-4e76-af88-3feec6bd4264.png)
+![image](https://user-images.githubusercontent.com/21108295/146695026-b47d05fa-dbbe-4e76-af88-3feec6bd4264.png)
 
-	###Funcionamiento del API
+	#Funcionamiento del API
 	
-	![image](https://user-images.githubusercontent.com/21108295/146695236-0cc68457-f0c9-47ce-8125-d4fda053fedf.png)
+![image](https://user-images.githubusercontent.com/21108295/146695236-0cc68457-f0c9-47ce-8125-d4fda053fedf.png)
 
 	
 	
