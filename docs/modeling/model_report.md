@@ -61,10 +61,13 @@ El modelo presentado para este proyecto se define como un modelo de Redes Neuron
 
 
 ## Results
+
+las evalucaciones sobre el modelo se dieron con las siguientes caracteristicas.
+
 * valuation metric results:-
 MSE is : 4.3382098817287355e-06
 MAE is : 0.0014370301978646467
 RMSE is : 0.0020828369791533697
 R2 is : -0.3962299464998571
 
-* Performance graphs for parameters sweeps if applicable
+![image](https://user-images.githubusercontent.com/21108295/146694010-5d9ecf0e-e68a-42ee-8c24-8a948bd89d79.png)
