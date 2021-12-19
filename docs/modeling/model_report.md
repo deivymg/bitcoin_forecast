@@ -20,22 +20,21 @@ El modelo presentado para este proyecto se define como un modelo de Redes Neuron
 ## Solution Description
 
 *Simple solution architecture (Data sources, solution components, data flow)
-* la salida del modelo es la predicción del modelo a un valor futuro de la divisa.
+* la salida del modelo es la predicción del modelo a un valor futuro de la divisa (target).
 
 ## Data
 * los datos son extraidos a traves de la web API de Binance, esta nos ofrece los datos de la criptomoneda en cuestion (BITCOIN). primero se genera un request a la API para que nos enterge la informacion del historico de BITCOIN en un periodo de 15 min.
 
-* Data Schema
+* Los datos son preprocesados y luego se integra se normalizan con un standar scaller
 
-* Sampling
+* Los datos con los que se haran las predicciones son todos los klines agrupados porminuto durante el ultimo dia en curso, esto debido a que se requiere calcular el vwap que es una valor calculado a diario.
 
-* Selection (dates, segments)
+* Rango de trabajo ultimas 24 horas de datos
 
-* Stats (counts)
+* Medicion  Mse
 
 ## Features
 
-* List of raw and derived features 
 * la mejor clasificación que le podemos dar a las variablems de foma Ordinal es la siguiente:
 
     Close
@@ -43,24 +42,32 @@ El modelo presentado para este proyecto se define como un modelo de Redes Neuron
     Date
     High
     Low
+    vwap
 
 
 ## Algorithm
-* Modelo LSTM de 50 capas intermedias, Una capa densa y un Optimizador Adam
 
-	* Description or images of data flow graph
-  		* if AzureML, link to: (Imagen del modelo)
-    		* Training experiment
-    		* Scoring workflow
-* learning rate: 1x10^-3
+![image](https://user-images.githubusercontent.com/21108295/146693871-86f8a757-de2d-4fd5-bfd6-3ab5db6950fc.png)
 
+* El modelo se puede encontrar entrenado [aqui](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/modeling/model_CuDNNLSTM.h5)
+	* 50 neuronsa CuDNNLSTM 
+	* Activación Relu
+	* Epocas de entrenamiento en calentamiento: 3
+	* Epocas de entrenamiento: 100
+		* validation_steps: 50
+		* Medición de error Mean Square Error
+* learning rate: 1x10^-5
 * Learner hyper-parameters
 
+
 ## Results
+
+las evalucaciones sobre el modelo se dieron con las siguientes caracteristicas.
+
 * valuation metric results:-
 MSE is : 4.3382098817287355e-06
 MAE is : 0.0014370301978646467
 RMSE is : 0.0020828369791533697
 R2 is : -0.3962299464998571
 
-* Performance graphs for parameters sweeps if applicable
+![image](https://user-images.githubusercontent.com/21108295/146694010-5d9ecf0e-e68a-42ee-8c24-8a948bd89d79.png)

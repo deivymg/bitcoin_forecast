@@ -1,62 +1,100 @@
 # Exit Report of Project <X> for Customer <Y>
 
-Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within code repository (not in this document).
 
-Customer: <Enter Customer Name\>
+	
+Una vez se elaboro el modelo se definieron metricas para evaluar el desempeño con base en las siguientes mediciones y asi crear un despliegue que pueda ser consumido por el cliente mediante un API y un dashboard
 
-Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
-
+	
 ##	Overview
 
-<Executive summary of entire solution, brief non-technical overview\>
+Nuestra solucion calcula en tiempo real los rendimientos de la criptomoneda Bitcoin para los proximos 15 minutos, por lo cual puede usarse esto como un modelo de prediccion que le permitira a traders predecir el posible comportamiento de la criptomoneda durante los proximos 15 minutos y asi tomar una desicion de inversion con esta información.
+
 
 ##	Business Domain
-<Industry, business domain of customer\>
+
+Este modelo esta enfocado en proveer una solucion en tiempo real para traders e inversionistas en la criptomoneda bitcoin, con la cual podran hacer uso de uno modelo de deep learning basado en redes recuerrentes probado y validado para la prediccion de estas criptomonedas.
 
 ##	Business Problem
-<Business problem and exact use case(s), why it matters\>
+
+El problema que se busca resolver con esta solución es tener un criterio mas al momento de invertir en la criptomoneda bitcoin con el fin de que se pueda tener mas certeza sobre inversiones en este mercado tan volatil.
 
 ##	Data Processing
-<Schema of original datasets, how data was processed, final input data schema for model\>
+Los datos fueron tomados de un fuente abierta y procesados para determinar valores faltantes y outliers que puedieran afectar el entremaiento del modelo.
 
 ##	Modeling, Validation
-<Modeling techniques used, validation results, details of how validation conducted\>
-
+Las tecnicas usadas para 
 ##	Solution Architecture
-<Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
+
+		* Mean Square Error: representa la media de la diferencia al cuadrado entre los valores originales y los predichos en el conjunto de datos. Mide la varianza de los residuos. 
+	* Mean absolute error: representa la media de la diferencia absoluta entre los valores reales y los predichos en el conjunto de datos. Mide la media de los residuos en el conjunto de datos.
+	* Root-mean-square deviation: Mide la varianza de los residuos.
+	* R2: es la proporción de la variación de la variable dependiente que es predecible a partir de la variable independiente
+	
+
+El modelo se diseño para predecir los proximos el target el cual es el log residual de los rendimientos predecidos para los proximos 15 minutos, por lo cual la evaluacion sera sobre el valor de target predicho por nuestro modelo.
+	
+Las mediciones que se obtuvieron para este modelo son las siguientes.
+	
+	* Evaluation metric results:-
+	* MSE is : 4.3382098817287355e-06
+	* MAE is : 0.0014370301978646467 
+	* RMSE is : 0.0020828369791533697
+	* R2 is : -0.3962299464998571 
+	
 
 ##	Benefits
 	
 ###	Company Benefit (internal only. Double check if you want to share this with your customer)
-<What did our company gain from this engagement? ROI, revenue,  etc\>
+
+	Los beneficios para nuestros clientes es contar con un modelo que le permita maximizar sus inversiones sobre la criptomoneda permitiendoles tener mayor certeza del futuro de sus inversiones a corto plazo (15 minutos), y de esta forma generar mayor rentabilidad al momento de invertir en esta criptomoneda.
+	
 
 ###	Customer Benefit
-What is the benefit (ROI, savings, productivity gains etc)  for the customer? If just POC, what is estimated ROI? If exact metrics are not available, why does it have impact for the customer?\>
+
+	Este modelo permite incrementar en un 10 % las ganacias al invertir en esta criptomoneda puediendo determinar si el comportamiento de una criptomoneda espera crecer o decrecer en los proximos 15 minutos.
 
 ##	Learnings
 
 ### 	Project Execution
-<Learnings around the customer engagement process\>
+	
+	Durante el desarrollo del proyecto se pudieron identifcar aquellas caracteristicas que le permiten a un modelo determinar si la criptomoneda esta al alza o por el contrario esta decrecera en los proximos 15 minutos, esto es un hito importante en el desarrollo de este proyecto.
 
 ### Data science / Engineering
-<Learnings related to data science/engineering, tips/tricks, etc\>
-
-
+	
+	Un calentamiento por 5 epocas y un entrenamiento posterior con un menor learning rate, asi como un droput del 20% mejoro notablemente el desempeño de las predicciones de los modelos basados en redes recurrentes.
+	
 ### Domain
-<Learnings around the business domain, \>
+
 
 ### Product
-<Learnings around the products and services utilized in the solution \>
+
+Durante el desarrollo se probaron varias tecnologias como Airflow, pero despues de muchas fallas se decidio trabajar co teclogias mas sensillas e integradas como crontab a nivel de servidor.
+	
+Tambien encontramos muy ultil el estandarizar las salidas y entradas del modelo para asi poder usar diferentes fuentes de datos, aunque esto requirio mucho trabajo, permitio agilizar el proceso de despliegue del modelo.
 
 ###	What's unique about this project, specific challenges
-<Specific issues or setup, unique things, specific challenges that had to be addressed during the engagement and how that was accomplished\>
+
+	Los retos mas interesantes de este proyecto fue elaborar una solucion de principio a fin , desde configurar servidor, desarrollar el modelo, construir clases y usar librerias especializadas, hasta el despliegue de la solucion en API y dashboard lo que permite a los clientes consumir de varias formas el servicio hizo que este proyecto fuera muy interesante y que cubriera a nivel generar todo lo requierido para manejar proyectos de sicencia de datos.
 
 ##	Links
-<Links to published case studies, etc.; Link to git repository where all code sits\>
+	* [Calculo de VWAP] (https://www.rankia.com/blog/bolsa-desde-cero/4279449-que-como-utiliza-vwap) usado por nuestro modelo para estandarizar las entradas a nuestro model.
+	* [Best models to predict Cryptocurrenci prices](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj07ujYgvH0AhXwSzABHfdSAUgQFnoECAYQAQ&url=https%3A%2F%2Fwww.mdpi.com%2F2673-2688%2F2%2F4%2F30%2Fpdf&usg=AOvVaw0KhCNFL1bCA5WnrzmjXV5G)
+	* [Building a predictive model for cryptocurrencies investment ](https://miuc.org/building-a-predictive-model-for-cryptocurrencies-investment/)
+	
 
 ##	Next Steps
  
-<Next steps. These should include milestones for follow-ups and who 'owns' this action. E.g. Post- Proof of Concept check-in on status on 12/1/2016 by X, monthly check-in meeting by Y, etc.\>
-
+Los proximos pasos para nuestro proyecto es adicoinar mas activos para que nuestro modelo pueda ser extrapolado a otras criptomonedas.
+	
 ## Appendix
-<Other material that seems relevant – try to keep non-appendix to <20 pages but more details can be included in appendix if needed\>
+
+	#Funcionamiento del dashboard
+	
+![image](https://user-images.githubusercontent.com/21108295/146695026-b47d05fa-dbbe-4e76-af88-3feec6bd4264.png)
+
+	#Funcionamiento del API
+	
+![image](https://user-images.githubusercontent.com/21108295/146695236-0cc68457-f0c9-47ce-8125-d4fda053fedf.png)
+
+	
+	
