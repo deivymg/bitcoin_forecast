@@ -13,7 +13,7 @@
 * Para el calculo de las predicciones se usaran las caracteristicas mas relevantes de cada uno de los klines por minutos extraidos del api, adicionalmente se calculara un valor VWAP que permitira al modelo predecir con mayor presicion los datos.
 
 * Para el despligue y trabajar de forma colaborativa se usara un servidor ubuntu en la infraestructura de google cloud, donde se almacenaran todos los documentos y programas necesarios para el despliegue del modelo y sus servicos de consumo.
-* Para extraer los datos de forma recurrente  se usara una tarea programada en el servidor a traves de un crontab
+* Para extraer los datos de forma recurrente  se usara una tarea programada en el servidor a traves de un crontab que ejecuta el programa de data_adquisition cada minuto.
 
 ```sh
 # Edit this file to introduce tasks to be run by cron.
