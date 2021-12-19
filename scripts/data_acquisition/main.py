@@ -80,10 +80,10 @@ def main():
     btc_df ['Target'] = 0
     
     #eliminamos columnas no cesarias antes de guardar el archivo
-    btc_df.drop(['sumVol', 'sumTypicalPrice', 'TypicalPrice'], axis=1)
+    btc_df.drop(['sumVol', 'sumTypicalPrice', 'TypicalPrice'], axis=1,inplace=True)
     
     # path para guardar el archivo
-    save_data_path =os.path.join(os.environ['PREPROCESS_DATA_PATH'],'ultimos_15_minutos.csv')
+    save_data_path =os.path.join(os.environ['BINANCE_RAW_PATH'],'ultimos_15_minutos.csv')
     
     #guardamos el dataframe en un archivo en formato csv
     btc_df.to_csv(save_data_path)

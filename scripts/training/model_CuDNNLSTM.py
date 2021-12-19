@@ -13,7 +13,7 @@ def main():
 	x_test = data_train_test['x_test']
 	y_test = data_train_test['y_test']
 
-	model_path = os.path.join( os.environ['MODEL_PATH'],"model_LSTM.h5")
+	model_path = os.path.join( os.environ['MODEL_PATH'],"model_CuDNNLSTM.h5")
 	model =tf.keras.models.load_model(model_path)
 	
 	early_stopings = tf.keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0, patience=30, verbose=1, mode='min')
