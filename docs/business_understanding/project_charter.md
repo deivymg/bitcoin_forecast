@@ -98,10 +98,10 @@
 ## Architecture
 * Data
   * Datos estructurados en CSV
-  * Se cosumen los datos de las APIs de Yahoo Finance y Binance
-  * 	 https://pypi.org/project/yfinance/
-  * 	 https://python-binance.readthedocs.io/en/latest/
-  
+  * Para el despligue se usara un APi en flash y un Dashboard en python con Dash
+  * Tambien se realizara un consumo de los datos con un api en python con la librearia de binance python.
+  * Toda la comunicacion sera a traves de un servidor cloud en google donde se diseñara y desplegara el modelo de predicción
+  * Tambien se entrenara el modelo con un dataset publico en kaggle que tiene datos suficientes para entrenar nuestro modelo. 
   * Se trabajará con la siguiente informacion respecto a una accioón o criptomoneda
 
 <ol>
