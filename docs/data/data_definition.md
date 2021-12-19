@@ -22,7 +22,21 @@ For each dataset, the links to the sample datasets in the _**Data**_ directory a
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
 | Processed Crypto Competition  | [kaggle dataset](https://www.kaggle.com/cstein06/tutorial-to-the-g-research-crypto-competition/data) | [Limpieza de datos](/scripts/preprocessing/main.py) | [Processed Crypto Report](/docs/data/data_preprocessing.md)|
-| Processed Binance API | [API data acquisition and processing](/scripts/data_acquisition/main.py) |[Limpieza de datos](/scripts/preprocessing/main.py )| [Processed Crypto Report](/docs/data/data_preprocessing.md)|
+| Processed Binance API | [API data acquisition and processing](/scripts/data_acquisition/main.py) |[Limpieza de datos](/scripts/preprocessing/main.py )| [Processed Crypto Report](/docs/data/data_preprocessing.md)| 
+
+
+La limpieza de datos es la misma para los dos tipos de datos ya que se hizo una estandarizacion de los archivos y ambos tienen la misma estructura.
+
 * Processed Crypto Competition summary. se crea un scrip de limpieza de datos faltantes y aplicar una normalización de los datos
 * Processed Binance API summary. Se crea un script para evaluar los datos y recibidos por el api y determinar si estan correctamente y aplicar normalización.
+
+
+## Feature Sets
+
+| Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
+| ---:| ---: | ---: | ---: | 
+| Caracteristicas klines| [Processed Crypto Report](/docs/data/data_preprocessing.md) | [VWAP](https://github.com/deivymg/bitcoin_forecast/blob/master/docs/data/vwap.md) | [Feature Set1 Report](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/data_acquisition/data/preprocess/ultimos_15_minutos.csv)|
+
+
+* Caracteristicas klines. Las caracteristicas extraidas para el analisis son: valor mas alto (High), valor mas bajo (Low), valor de apertura de la criptomoneda (Open), valor de cierre (Close) y el volumen de criptonedas transadas (Volumn) y Precio medio ponderado por volumen (VWAP)
 
