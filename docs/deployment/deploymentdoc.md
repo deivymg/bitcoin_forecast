@@ -1,8 +1,9 @@
 # Deployment
 
-In this folder you can add deployment documentation, including
+Despliegue
 
-* Documentation for the APIs (e.g. swagger).
+* APIS.\
+dfdsdf
 * Package documentation (e.g. sphinx).
 * Dashboard documentation.
 * Any other documentation depending on the deployment kind.
