@@ -35,7 +35,7 @@ La limpieza de datos es la misma para los dos tipos de datos ya que se hizo una 
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Caracteristicas klines| [CSV](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/data_acquisition/data/preprocess/ultimos_15_minutos.csv), [Processed Crypto Report](/docs/data/data_preprocessing.md) | VWAP(link) | [Feature Set1 Report](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/data_acquisition/data/preprocess/ultimos_15_minutos.csv)|
+| Caracteristicas klines| [Processed Crypto Report](/docs/data/data_preprocessing.md) | VWAP(link) | [Feature Set1 Report](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/data_acquisition/data/preprocess/ultimos_15_minutos.csv)|
 
 
 * Caracteristicas klines. Las caracteristicas extraidas para el analisis son: valor mas alto (High), valor mas bajo (Low), valor de apertura de la criptomoneda (Open), valor de cierre (Close) y el volumen de criptonedas transadas (Volumn) y Precio medio ponderado por volumen (VWAP)
