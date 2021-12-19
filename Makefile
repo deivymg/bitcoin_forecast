@@ -18,5 +18,5 @@ evaluariong:
 
 visualization:
 	@echo "visualizar dashboard"
-	source env_vars.env && python3 scripts/visualization/dash_app.py
+	source env_vars.env && python3 scripts/visualization/dash_app.py 
 
