@@ -13,7 +13,7 @@ def main():
 	x_test = data_train_test['x_test']
 	y_test = data_train_test['y_test']
 
-	model_path = os.path.join( os.environ['MODEL_PATH'],".h5")
+	model_path = os.path.join( os.environ['MODEL_PATH'],"model_LSTM.h5")
 	model =tf.keras.models.load_model(model_path)
 
 	loss, acc = model.evaluate(x_test, y_test)
@@ -23,8 +23,8 @@ def main():
 
 
 
-if __init__ = __main__:
-	return main()
+if __name__ == "__main__":
+	main()
  
 
 
