@@ -43,8 +43,7 @@ La siguiente imagen muestra la grafica de como se ve el modelo LSTM \
 	* Learner hyper-parameters
 Perdida del modelo 
 
-![image](https://user-images.githubusercontent.com/21108295/146693343-00e3540b-0be5-4420-9dc4-f071373ac5c2.png)
-\
+![image](https://user-images.githubusercontent.com/21108295/146693343-00e3540b-0be5-4420-9dc4-f071373ac5c2.png) \
 
 Como se evidencia en el modelo, este tiene un buen desempeño en cuanto a peridad en validación
 
@@ -65,12 +64,11 @@ Tamibien se diseño un modelo basado en Redes Recurrentes en los que la salida t
 	* Learner hyper-parameters
 Perdida del modelo 
 
-![image](https://user-images.githubusercontent.com/21108295/146693461-38862087-21ce-4c87-b26e-91b3a56c688f.png)
-\
+![image](https://user-images.githubusercontent.com/21108295/146693588-484076f5-ec47-47ca-86f9-3604852d1991.png) \
 
 
 ## Results (Model Performance) LSTM
-* Evaluation metric results:-
+* Evaluation metric results:- \
 Evaluation metric results:- \
 MSE is : 0.00010182643872599576 \
 MAE is : 0.006106787879975921 \
@@ -80,30 +78,30 @@ R2 is : -31.77230170293499 \
 ## Results (Model Performance) CuDNNLSTM
 Evaluation metric results:- \
 MSE is : 4.3382098817287355e-06 \
-MAE is : 0.0014370301978646467\ 
-RMSE is : 0.0020828369791533697\
-R2 is : -0.3962299464998571\
+MAE is : 0.0014370301978646467 \ 
+RMSE is : 0.0020828369791533697 \
+R2 is : -0.3962299464998571 \
 
 
 
 ## Model Understanding
 
-* la mejor clasificación que le podemos dar a las variablems de foma Ordinal es la siguiente:
 
-    Close
-    Open
-    Date
-    High
-    Low
+Como se evidencia anteriormente el modelo que menor perdida en todos los valores excepto MSE fue el modelo de redes recurrentes CuDNNLSTM. 
+Ahora veamos un comparativo en las predicciones graficamente
 
+* LSTM
+
+![image](https://user-images.githubusercontent.com/21108295/146693679-2060a390-64b6-4601-9a4d-5b210de2267e.png)
+
+* CuDNNLSTM
+
+![image](https://user-images.githubusercontent.com/21108295/146693685-12aa1cbf-2fe0-433c-9482-84aaacc88d9b.png)
 
 
 ## Conclusion and Discussions for Next Steps
 
-* Conclusion on Feasibility Assessment of the Machine Learning Task
+* Las medidas de confidencialidad nos indican que el modelo CuDNNLSTM se desempeña en un buen rango de valuación
+* La grafica de las predicciónes muestra que el modelo CuDNNLSTM no se aleja tanto de las predicciones como lo hizo el modelo LSTM
+Por lo cual se seguira trabajando con el modelo CuDNNLSTM como modelo de prediccion en tiempo real de ls valores target 
 
-* Discussion on Overfitting (If Applicable)
-
-* What other Features Can Be Generated from the Current Data
-
-* What other Relevant Data Sources Are Available to Help the Modeling
