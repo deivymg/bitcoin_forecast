@@ -33,6 +33,8 @@ En este servidor se realizo obtencion, procesamiento de datos, diseno y desplieg
 
 ![image](https://github.com/deivymg/bitcoin_forecast/blob/master/modelo1.jpeg)
 
+![image](https://github.com/deivymg/bitcoin_forecast/blob/master/modelo2.jpeg)
+
 Para mas informacion ver [despliegue_flask](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/api/main.py)
 
 
