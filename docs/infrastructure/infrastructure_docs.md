@@ -24,14 +24,11 @@ En este servidor se realizo obtencion, procesamiento de datos, diseno y desplieg
 * Execution pipelines con crontab.\
 ![image](https://user-images.githubusercontent.com/21108295/146690530-917f60a0-c84b-416f-9c6c-7a54455426d7.png)
 
-## Pasos del despliegue final.
+## Pasos dentro del despliegue final.
 
-*Carga los datos mediante a API de binance de los ultimos 15 minutos.
-
-*Preprocesa los datos y los carga en un path conocido.
-
-*Carga los modelos pre entrenados desde un path conocido. 
-
-*Realiza las predicciones los modelos con los datos preprocesados y los muestra en la API. 
+* Carga los datos mediante a API de binance de los ultimos 15 minutos.
+* Preprocesa los datos y los carga en un path conocido.
+* Carga los modelos pre entrenados desde un path conocido. 
+* Realiza las predicciones los modelos con los datos preprocesados y los muestra en la API. 
 
 
