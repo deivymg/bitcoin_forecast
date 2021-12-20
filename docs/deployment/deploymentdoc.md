@@ -8,6 +8,8 @@
 
 * Para consumo de los clientes se usara un Dash realizado en Dash Pyplot.
 
+* Para el consumo del modelo, se creara una api a travez de Flask y luego se desplegara de forma publica mediante Heroku. 
+
 * Guias  de consumo de librearia [Binance](https://python-binance.readthedocs.io/en/latest/).
 
 * Para el calculo de las predicciones se usaran las caracteristicas mas relevantes de cada uno de los klines por minutos extraidos del api, adicionalmente se calculara un valor [VWAP](https://github.com/deivymg/bitcoin_forecast/blob/master/docs/data/vwap.md) que permitira al modelo predecir con mayor presicion los datos.
