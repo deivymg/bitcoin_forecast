@@ -31,5 +31,6 @@ En este servidor se realizo obtencion, procesamiento de datos, diseno y desplieg
 * Carga los modelos pre entrenados desde un path conocido. 
 * Realiza las predicciones los modelos con los datos preprocesados y los muestra en la API. 
 
-Para mas informacion ver [Feature Set1 Report](https://github.com/deivymg/bitcoin_forecast/scripts/api/main.py)
+Para mas informacion ver [Feature Set1 Report](https://github.com/deivymg/bitcoin_forecast/blob/master/scripts/scripts/api/main.py)
+
 
