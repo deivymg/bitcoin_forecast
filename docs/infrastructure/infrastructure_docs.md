@@ -15,7 +15,8 @@ Memory: 260MiB / 3928MiB\
 En este servidor se realizo obtencion, procesamiento de datos, diseno y despliegue del modelo de prediccion.
 \Tambien se uso para obtencion de datos en tiempo real del api de binance.
 * Notebooks Google Colab: \se uso notebooks de google colab para desplegar servicios de dash  algunos servicios consumidos por la aplciacion como lo es la limpieza de los datos.
-* Web Server  Flask. \Este servicio se uso para desplegar el API que consumen los clientes
+* Web Server  Flask. \Este servicio se uso para desplegar el API que consumen los clientes.
+* HEROKU para desplegar la API de forma publica. 
 * Dash. Este servicio se uso para desplegar el dashboard que consumen los clientes
 * Repositorio de aplicacion Github, para trabajar colaborativamente y desarrollar la solucion
 * Versionamiento del codigo Git.
