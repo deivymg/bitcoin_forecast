@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify
 from pydantic import BaseModel, Field
 import numpy as np
@@ -41,16 +40,24 @@ def predict_evaluation():
 def main():
     data_acquisition.main()
     preprocessing.main()
-    trained_model_path = os.path.join(os.environ['MODEL_RAW_PATH'],'model_LSTM.h5')
+    trained_model_path_1 = os.path.join(os.environ['MODEL_RAW_PATH_1'],'model_LSTM.h5')
+    trained_model_path_2 = os.path.join(os.environ['MODEL_RAW_PATH_2'],'model_CuDNNLSTM.h5')
     preprocess_data_path = os.path.join(os.environ['PREPROCESS_DATA_PATH'],"preprocessed_binance")
-    model = keras.experimental.load_from_saved_model(trained_model_path)
-    predictions=model.predict(preprocess_data_path )
-    predictions_json=json.dumps(predictions.tolist())
+    model1 = keras.experimental.load_from_saved_model(trained_model_path_1)
+    model2 = keras.experimental.load_from_saved_model(trained_model_path_2)
+    predictions_1=model1.predict(preprocess_data_path )
+    predictions1_json=json.dumps(predictions_1.tolist())
+    predictions_2=model2.predict(preprocess_data_path )
+    predictions2_json=json.dumps(predictions_2.tolist())
 
     app= Flask(__name__)
-    @app.route('/',methods=['GET'])
+    @app.route('/prediction1',methods=['GET'])
     def api_description():
-        return jsonify({'El modelo predice ':predictions_json})
+        return jsonify({'El modelo predice ':predictions1_json})
+
+    @app.route('/prediction2',methods=['GET'])
+    def api_description():
+        return jsonify({'El modelo predice ':predictions2_json})
     app.run(debug=True)
 
 #%tb
