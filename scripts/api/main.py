@@ -53,11 +53,11 @@ def main():
     app= Flask(__name__)
     @app.route('/prediction1',methods=['GET'])
     def api_description():
-        return jsonify({'El modelo predice ':predictions1_json})
+        return jsonify({'El modelo CuDNNLSTM predice ':predictions1_json})
 
     @app.route('/prediction2',methods=['GET'])
     def api_description():
-        return jsonify({'El modelo predice ':predictions2_json})
+        return jsonify({'El modelo LSTM predice ':predictions2_json})
     app.run(debug=True)
 
 #%tb
